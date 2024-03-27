@@ -29,21 +29,21 @@ can do all the things that BaseRobot can do, but with these differences:
 The ArmBot class should have properties it inherits from the BaseRobot and the following properties:
 
 * ```self.arm_position```: The position of the arm of the robot
-* ```self.claw```: A boolean value indicating if the claw is open or closed
+* ```self.claw_open```: A boolean value indicating if the claw is open or closed
 
 The Armbot should have the following methods:
 
 * ```__init__```: In the init method it should call the init of the BaseRobot class using super, but also set a value for 
 its arm position, ```self.arm_position``` to be zero. Also, it sets a value for the claw indicating that the claw is closed.
-Do this by setting ```self.claw``` to ```False```.
+Do this by setting ```self.claw_open``` to ```False```.
 * ```move_arm```: This method takes in a number and increases the arm_position by that amount.
-* ```grab_claw```: This method sets the value of ```self.claw``` to be ```False```.
-*  ```release_claw```: This method sets the value of ```self.claw``` to be ```True```.
+* ```grab_claw```: This method sets the value of ```self.claw_open``` to be ```False```.
+*  ```release_claw```: This method sets the value of ```self.claw_open``` to be ```True```.
 * ```__str__```: Reports the position of the robot and status of the arm and the claw.
 
 The code for the ```__str__``` method should look like this:
 
 ```python
 def __str__(self):
-    return super().__str__()+" with arm at position {self.arm_position} and claw is {'open' if self.claw else 'closed'}"
+    return super().__str__()+" with arm at position {self.arm_position} and claw is {'open' if self.claw_open else 'closed'}"
 ```
