@@ -3,14 +3,14 @@ from baseRobot import BaseRobot
 
 if __name__ == "__main__":
     # This code should run and produce the following output:
-    # x: 1 y: 2
-    # x: 4 y: 6
-    # beep
-    # x: 5 y: 8 arm: 0, claw: False
-    # x: 5 y: 8 arm: 10, claw: False
-    # x: 5 y: 8 arm: 10, claw: True
-    # x: 5 y: 8 arm: 10, claw: False
-    # beep
+    # Robot is at position (1, 2)
+    # Robot is at position (4, 6)
+    # Beep
+    # Robot is at position (5, 8) with arm at position 0 and claw closed
+    # Robot is at position (5, 8) with arm at position 10 and claw closed
+    # Robot is at position (5, 8) with arm at position 10 and claw open
+    # Robot is at position (5, 8) with arm at position 10 and claw closed
+    # Beep
 
     robbie = BaseRobot(1, 2)
     print(robbie)
