@@ -45,5 +45,5 @@ The code for the ```__str__``` method should look like this:
 
 ```python
 def __str__(self):
-    return super().__str__()+" with arm at position {self.arm_position} and claw is {'open' if self.claw_open else 'closed'}"
+    return super().__str__()+" with arm at position {self.arm_position} and claw {'open' if self.claw_open else 'closed'}"
 ```
